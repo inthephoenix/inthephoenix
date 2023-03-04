@@ -38,8 +38,6 @@ function App() {
   const [names, setNames] = useState<any>([])
   const [hackedNameState, setHackedName] = useState<any>("")
   const [namesL, setNamesL] = useLocalStorage("name", [])
-
-  const [help, setHelp] = useState(false)
   const handleHelp = () => {
     setHelp(!help)
   }
