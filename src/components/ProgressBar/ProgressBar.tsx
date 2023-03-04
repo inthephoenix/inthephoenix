@@ -14,7 +14,7 @@ const ProgressBar = () => {
       }
       setCounter((prev) => prev + 1)
       // counter++
-    }, 25)
+    }, 10)
 
     return () => clearInterval(timer)
   }, [counterState])
@@ -27,8 +27,8 @@ const ProgressBar = () => {
     <div className="wrapper">
       <div className="loading">
         {load1 && "LOADING..."}
-        {load2 && "CONFIGURING WEBPACK..."}
-        {load3 && "UPDATING NPM PACKAGES..."}
+        {load2 && "CONFIGURING IA..."}
+        {load3 && "UPDATING SERVERS..."}
         {load4 && "FINISHING..."}
       </div>
 
